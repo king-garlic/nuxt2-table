@@ -1,22 +1,23 @@
 <template>
-  <el-container>
-    <el-header>Header</el-header>
-    <el-container>
-      <el-aside width="200px">Aside</el-aside>
+  <div>
+    <Header />
+    <el-container style="padding-top: ;100px">
+      <Aside />
       <el-main><Nuxt /></el-main>
     </el-container>
-  </el-container>
+  </div>
 </template>
 <style>
 .el-header,
 .el-footer {
   background-color: #b3c0d1;
   color: #333;
-  text-align: center;
+  /* text-align: center; */
   line-height: 60px;
 }
 
 .el-aside {
+  padding-top: 100px;
   background-color: #d3dce6;
   color: #333;
   text-align: center;
@@ -24,6 +25,7 @@
 }
 
 .el-main {
+  padding-top: 100px;
   background-color: #e9eef3;
   color: #333;
   text-align: center;
